@@ -1,0 +1,57 @@
+:root{
+    --blue: #255978;
+    --pink: #EECAC6;
+    --lightblue: #4181A7;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;
+    margin: 0;}
+.bg-img {
+    /* bakcground for navigation */
+    background-image: url(/images/navigation.png);
+    min-height: 200px;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 8fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    list-style-type: none;
+    margin-top: 0;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding: 0;
+}  
+
+nav ul li{
+    margin-top: 10px;
+    text-align: center;
+}
+
+nav ul li a:hover{
+    color: white;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.logo{
+    height: 40px;
+}
+
+.icon{
+    height: 30px;
+}
+
+.footer_image{
+    max-height: 2.75px;
+    margin-left: 70px;
+}
