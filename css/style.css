@@ -4,20 +4,23 @@
     --lightblue: #4181A7;
 }
 
-body {font-family: Arial, Helvetica, sans-serif;
+body {font-family: 'Niramit', sans-serif;
     margin: 0;}
+
+/*This part is for navigation bar*/
 .bg-img {
     /* bakcground for navigation */
     background-image: url(/images/navigation.png);
-    min-height: 200px;
+    min-height: 150px;
     background-position: top;
     background-repeat: no-repeat;
-    position: relative;
+    position: fixed;
+    z-index: +1;
 }
 
 nav ul{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 8fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 10fr 1fr 1fr 1fr;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -51,7 +54,58 @@ nav ul li a{
     height: 30px;
 }
 
+/*main part*/
+
+/*background image*/
+.bg-img2{
+    background-image: url(/images/Screenshot\ 2023-01-27\ at\ 15.54.18.png);
+    background-size: cover;
+    min-height: 1200px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/*intro and text*/
+
+#visit{
+    margin-left: 100px;
+    font-family: 'Charmonman', cursive;
+    font-size: 30px;
+    color: var(--blue);
+}
+
+#brabrand{
+    margin-left: 130px;
+    font-size: 40px;
+    color: var(--blue);
+}
+
+.text{
+    margin-left: 100px;
+}
+
+
+/*this is the footer part*/
 .footer_image{
     max-height: 2.75px;
     margin-left: 70px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-left: 70px;
+    margin-right: 100px;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+footer div link a:hover{
+    color: white;
 }
