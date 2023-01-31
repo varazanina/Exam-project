@@ -1,7 +1,12 @@
-:root{
+:root {
     --blue: #255978;
     --pink: #EECAC6;
     --lightblue: #4181A7;
+}
+
+/* for places on main page there is a scroll option */
+html {
+    scroll-behavior: smooth;
 }
 
 body {font-family: 'Niramit', sans-serif;
@@ -14,11 +19,11 @@ body {font-family: 'Niramit', sans-serif;
     min-height: 150px;
     background-position: top;
     background-repeat: no-repeat;
-    position: fixed;
-    z-index: +1;
+    /* position: fixed;
+    z-index: +1; */
 }
 
-nav ul{
+nav ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 10fr 1fr 1fr 1fr;
     justify-content: center;
@@ -32,66 +37,115 @@ nav ul{
     padding: 0;
 }  
 
-nav ul li{
+nav ul li {
     margin-top: 10px;
     text-align: center;
 }
 
-nav ul li a:hover{
+/* white hover for the navbar options*/
+nav ul li a:hover {
     color: white;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: var(--blue);
 }
 
-.logo{
+.logo {
     height: 40px;
 }
 
-.icon{
+.icon {
     height: 30px;
 }
 
 /*main part*/
 
 /*background image*/
-.bg-img2{
-    background-image: url(/images/Screenshot\ 2023-01-27\ at\ 15.54.18.png);
+.bg-img2 {
+    /* background-image: url(/images/Screenshot\ 2023-01-27\ at\ 15.54.18.png);
     background-size: cover;
     min-height: 1200px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
     position: relative;
 }
 
+.demo-bg {
+    opacity: 0.6;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+  }
+
 /*intro and text*/
 
-#visit{
+#visit {
     margin-left: 100px;
     font-family: 'Charmonman', cursive;
     font-size: 30px;
     color: var(--blue);
 }
 
-#brabrand{
+#brabrand {
     margin-left: 130px;
     font-size: 40px;
     color: var(--blue);
 }
 
-.text{
+.text {
     margin-left: 100px;
+    margin-bottom: 25%;
+}
+
+/* arrow image center */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    size: auto;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+  
+.flex-container > div {
+    background-image: linear-gradient(#EECAC6, #FCF6F5);
+    margin: 2%;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.flex_image {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
+h4 {
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+}
+
+.flex_text {
+    font-size: small;
 }
 
 
 /*this is the footer part*/
-.footer_image{
+.footer_image {
     max-height: 2.75px;
     margin-left: 70px;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -101,11 +155,11 @@ nav ul li a{
     margin-right: 100px;
 }
 
-.link{
+.link {
     text-decoration: none;
     color: black;
 }
 
-footer div link a:hover{
+footer div link a:hover {
     color: white;
 }
