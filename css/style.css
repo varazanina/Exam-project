@@ -4,6 +4,8 @@
     --lightblue: #4181A7;
 }
 
+/* MAIN PAGE */
+
 /* for places on main page there is a scroll option */
 html {
     scroll-behavior: smooth;
@@ -121,6 +123,14 @@ nav ul li a {
     margin: 2%;
     padding: 20px;
     font-size: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flex-container div {
+    display: flex;
+    justify-content: center;
 }
 
 .flex_image {
@@ -136,7 +146,28 @@ h4 {
 
 .flex_text {
     font-size: small;
+    margin-top: 10%;
 }
+
+/* all three "read me" buttons are styled here */
+.button {
+    background-color: var(--lightblue);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: medium;
+    margin-top: 25px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: white;
+    color: var(--lightblue);
+}
+  
 
 
 /*this is the footer part*/
@@ -162,4 +193,27 @@ h4 {
 
 footer div link a:hover {
     color: white;
+}
+
+/* 404 page */
+
+.flex-con {
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.flex-con > div {
+    margin: 2%;
+    padding: 20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flex-con div {
+    display: flex;
+    justify-content: center;
 }
