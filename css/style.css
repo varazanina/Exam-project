@@ -25,6 +25,12 @@ body {font-family: 'Niramit', sans-serif;
     z-index: +1; */
 }
 
+@media only screen and (max-width: 600px) {
+    .bg-img {
+        display: none;
+    }
+}
+
 nav ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 10fr 1fr 1fr 1fr;
@@ -73,6 +79,7 @@ nav ul li a {
     position: relative;
 }
 
+
 .demo-bg {
     opacity: 0.6;
     position: absolute;
@@ -83,6 +90,27 @@ nav ul li a {
     z-index: -1;
   }
 
+  @media only screen and (max-width: 600px) {
+    .demo-bg {
+        display: none;
+    }
+    .mobile_background {
+        display: block;
+        opacity: 0.6;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        z-index: -1;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .mobile_background {
+        display: none;
+    }
+}
 /*intro and text*/
 
 #visit {
@@ -103,12 +131,36 @@ nav ul li a {
     margin-bottom: 25%;
 }
 
+@media only screen and (max-width: 600px) {
+    #visit {
+        margin-left: none;
+        display: flex;
+        justify-content: center;
+    }
+    #brabrand {
+        margin-left: none;
+        display: flex;
+        justify-content: center;
+    }
+    .text {
+        margin-left: none;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50%;
+    }
+}
+
 /* arrow image center */
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     size: auto;
+}
+
+.walk {
+    display: flex;
+    justify-content: center;
 }
 
 .flex-container {
@@ -133,6 +185,12 @@ nav ul li a {
     justify-content: center;
 }
 
+@media only screen and (max-width: 600px) {
+    .flex-container {
+        flex-wrap: wrap;
+    }
+}
+
 .flex_image {
     display: flex;
     justify-content: center;
@@ -147,6 +205,7 @@ h4 {
 .flex_text {
     font-size: small;
     margin-top: 10%;
+    margin-bottom: 35%;
 }
 
 /* all three "read me" buttons are styled here */
@@ -161,6 +220,7 @@ h4 {
     margin-top: 25px;
     transition-duration: 0.4s;
     cursor: pointer;
+    border-radius: 35px;
 }
 
 .button:hover {
@@ -195,6 +255,12 @@ footer div link a:hover {
     color: white;
 }
 
+@media only screen and (max-width: 600px) {
+    footer {
+        display: none;
+    }
+}
+
 /* 404 page */
 
 .flex-con {
@@ -217,3 +283,4 @@ footer div link a:hover {
     display: flex;
     justify-content: center;
 }
+
