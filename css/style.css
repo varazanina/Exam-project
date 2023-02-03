@@ -29,6 +29,9 @@ body {font-family: 'Niramit', sans-serif;
     .bg-img {
         display: none;
     }
+    .dissappearpls {
+        display: none;
+    }
 }
 
 nav ul {
@@ -146,7 +149,7 @@ nav ul li a {
         margin-left: none;
         display: flex;
         justify-content: center;
-        margin-bottom: 50%;
+        margin-bottom: 100%;
     }
 }
 
@@ -223,11 +226,29 @@ h4 {
     border-radius: 35px;
 }
 
+.button_red {
+    background-color: var(--pink);
+    border: none;
+    color: white;
+    padding: 16px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: medium;
+    margin-top: 25px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 35px;
+}
+
 .button:hover {
     background-color: white;
     color: var(--lightblue);
 }
-  
+
+.button_red:hover {
+    background-color: white;
+    color: var(--pink);
+}
 
 
 /*this is the footer part*/
@@ -270,6 +291,15 @@ footer div link a:hover {
     margin-right: 10%;
 }
 
+@media only screen and (max-width: 600px) {
+    .flex-con {
+        flex-wrap: wrap;
+    }
+    #gallery {
+        display: none;
+    }
+}
+
 .flex-con > div {
     margin: 2%;
     padding: 20px;
@@ -284,3 +314,7 @@ footer div link a:hover {
     justify-content: center;
 }
 
+/* one place more detailed */
+.image {
+    size: auto;
+}
